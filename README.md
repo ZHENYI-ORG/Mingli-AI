@@ -6,7 +6,9 @@
 
 ![真一模型概览](docs/assets/model-overview.png)
 
-[模型权重](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/releases/tag/v0.1.0) · [评测结果](#评测结果) · [快速部署](#快速部署) · [API 调用](#api-调用) · [参与项目](#为什么开源)
+[在线体验](https://www.zhenyi.org) · [模型权重](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/releases/tag/v0.1.0) · [评测结果](#评测结果) · [快速部署](#快速部署) · [API 调用](#api-调用) · [参与项目](#为什么开源)
+
+**不想部署？直接前往 [www.zhenyi.org](https://www.zhenyi.org) 在线体验真一。**
 
 ## 目录
 
@@ -66,6 +68,8 @@
 模型权重作为本仓库的 Release 附件发布，属于**已合并版**：真一微调结果已经写入底模权重，部署时无须单独加载 LoRA。模型体积较大，请准备足够的磁盘空间和适配 BF16 模型的推理硬件。
 
 ## 快速部署
+
+如果只想体验模型，无需自行部署，可直接访问 [真一在线体验](https://www.zhenyi.org)。
 
 需要 Node.js 20+、Python 3，以及支持该模型的 [ms-swift](https://github.com/modelscope/ms-swift) 推理环境。先下载全部 Release 附件，按校验值还原模型，再构建后端：
 
