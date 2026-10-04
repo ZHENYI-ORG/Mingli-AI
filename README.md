@@ -23,10 +23,10 @@
 
 ## 下载与部署
 
-需要 Node.js 20+、真一合并版模型权重和支持该模型的推理环境。合并版已将真一 LoRA 写入 Qwen3.8-27B 权重，部署时只需加载一个模型目录。模型文件正在上传至本仓库的 v0.1.0 Release，核验齐全后公开。发布后下载全部附件，用 `scripts/reconstruct-model.py` 按 SHA-256 校验并还原模型。
+需要 Node.js 20+、真一合并版模型权重和支持该模型的推理环境。合并版已将真一 LoRA 写入 Qwen3.8-27B 权重，部署时只需加载一个模型目录。模型文件已在本仓库的 v0.1.0 Release 提供。下载全部附件，用 `scripts/reconstruct-model.py` 按 SHA-256 校验并还原模型。
 
 ```bash
-gh release download v0.1.0 --repo ZHENYI-ORG/Zhenyi-AI --dir model-assets
+gh release download v0.1.0 --repo ZHENYI-ORG/zhenyi-mingli-ai --dir model-assets
 python3 scripts/reconstruct-model.py model-assets model/zhenyi
 npm ci
 npm run build
