@@ -1,0 +1,446 @@
+{
+  "version": "2.5.5-algorithm-correction",
+  "policy": {
+    "S_A": "可进入生产裁决，但仍必须满足结构条件和反证门。",
+    "B": "全部结构化保存为候选/元数据；默认不得单独进入第一主功、正反局正式翻转或重大事件。",
+    "disputed": "程序可识别，但隔离；等待来源金标准后晋级。",
+    "no_fake_precision": "书源没有统一比例时，不把工程权重或课堂百分比伪装成概率。"
+  },
+  "rules": [
+    {
+      "id": "BLIND-ENTRY-DM-COMBINE-001",
+      "area": "入手法",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "先看日干有无有效五合；有合先沿该意向追真实功链。"
+    },
+    {
+      "id": "BLIND-ENTRY-DM-OUTPUT-CHAIN-001",
+      "area": "入手法",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "日干无有效合而生食伤时，继续追食伤后续实际功用；裸泄秀不压过已完成后续链。"
+    },
+    {
+      "id": "BLIND-ENTRY-DAY-BRANCH-001",
+      "area": "入手法",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "日干无更前置有效功时转看日支刑冲克穿墓合与成党成势。"
+    },
+    {
+      "id": "BLIND-ENTRY-LU-PEER-001",
+      "area": "入手法",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "日干日支均无清晰功时再看禄比；禄比做功不自动抬层次。"
+    },
+    {
+      "id": "BLIND-GUEST-HOST-HIERARCHY-001",
+      "area": "宾主",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "宾主按日主/他、日柱/他、日时/年月、原局/岁运分层保存；宫位与功链代理主方分开。"
+    },
+    {
+      "id": "BLIND-TIYONG-DYNAMIC-001",
+      "area": "体用",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "体用按当前功链动态定；食伤可体可用，财官也可在反向/复合结构中作工具。"
+    },
+    {
+      "id": "BLIND-GONG-ROLE-001",
+      "area": "功神废神",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "主要功神、辅助功神、次级执行器和当前废神候选分开；只生扶主要功神者不得抢第一。"
+    },
+    {
+      "id": "BLIND-PARTY-QISHI-001",
+      "area": "党势",
+      "grade": "S/A",
+      "status": "production_with_declared_engineering_gate",
+      "statement": "木火、金水、水木、火燥土、金湿土、水湿土等来源明确党势结构化；无完整组合时工程门公开标记。"
+    },
+    {
+      "id": "BLIND-PARTY-PROJECTION-001",
+      "area": "党势",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "区分党内流转与向党外实际做功；只有实际投射才可作为主功/正反方向证据。"
+    },
+    {
+      "id": "REL-DRY-EARTH-BRITTLE-001",
+      "area": "燥湿土",
+      "grade": "A",
+      "status": "production",
+      "statement": "未戌燥土不按普通土生金，按脆金/制金处理。"
+    },
+    {
+      "id": "REL-WET-EARTH-DAMPEN-001",
+      "area": "燥湿土",
+      "grade": "A",
+      "status": "production",
+      "statement": "辰丑湿土不机械克水；对火保留晦火专项。"
+    },
+    {
+      "id": "REL-SELF-COMBINE-CONDITIONAL-001",
+      "area": "天地自合",
+      "grade": "A/B",
+      "status": "production_or_candidate",
+      "statement": "稳定天地合直接记录；丙戌壬戌须戌遇刑冲；戊辰仅研究候选。"
+    },
+    {
+      "id": "REL-ABSOLUTE-B-001",
+      "area": "四绝",
+      "grade": "B",
+      "status": "candidate",
+      "statement": "寅酉、卯申、子巳、午亥作为独立关系事实；方向强弱不凭关系名自动升级。"
+    },
+    {
+      "id": "REL-BREAK-B-CANDIDATE-001",
+      "area": "六破争议",
+      "grade": "B",
+      "status": "candidate",
+      "statement": "核心白名单外的常见六破/课堂破法程序可识别但不进生产主功。"
+    },
+    {
+      "id": "REL-SELF-PUNISH-B-CANDIDATE-001",
+      "area": "自刑争议",
+      "grade": "B",
+      "status": "candidate",
+      "statement": "辰午酉亥重复自刑只保留候选，不覆盖当前盲派核心关系口径。"
+    },
+    {
+      "id": "BLIND-TOMB-SNAPSHOT-001",
+      "area": "墓库",
+      "grade": "A",
+      "status": "production",
+      "statement": "稳定四生支入墓、特殊土墓与当前状态快照分离；见墓不等于已入墓。"
+    },
+    {
+      "id": "BLIND-TOMB-MULTI-001",
+      "area": "墓库",
+      "grade": "A",
+      "status": "production",
+      "statement": "多而墓之单独判断；岁运冲墓/合墓只生成待仲裁状态，不自动开闭。"
+    },
+    {
+      "id": "REALITY-60-JIAZI-001",
+      "area": "虚实",
+      "grade": "S",
+      "status": "production_frozen",
+      "statement": "六十甲子柱内虚实冻结表与RootState分离。"
+    },
+    {
+      "id": "GONG-ZHI-001",
+      "area": "做功方式",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "制用必须同时有十神角色与真实控制关系，普通邻支五行克不机械升级。"
+    },
+    {
+      "id": "GONG-CLASH-ZHI-001",
+      "area": "做功方式",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "冲制必须解析实际方向；冲存在不等于制成。"
+    },
+    {
+      "id": "GONG-HE-001",
+      "area": "做功方式",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "合用先确认真实合，再判主位能否驾驭/取得；合事实与取得成果分层。"
+    },
+    {
+      "id": "GONG-HUA-001",
+      "area": "做功方式",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "化用要求连续桥接链，官杀、印桥、主位结果端分别结算。"
+    },
+    {
+      "id": "GONG-MU-001",
+      "area": "做功方式",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "墓用只消费真实入墓事实，多目标逐项结算，墓库对应候选不得冒充取得。"
+    },
+    {
+      "id": "GONG-COMPOSITE-001",
+      "area": "做功方式",
+      "grade": "A",
+      "status": "production_gated",
+      "statement": "复合功只在允许的连续子链和真实共享节点下生成；不能按标题拼接。"
+    },
+    {
+      "id": "SETTLEMENT-TARGET-001",
+      "area": "结算",
+      "grade": "engineering_auditable",
+      "status": "production",
+      "statement": "每个目标逐项结算 acting/resolved/residual；Completion、Integrity、Ownership、Magnitude、Efficiency互不替代。"
+    },
+    {
+      "id": "MAINLINE-LEXICOGRAPHIC-BOOK-001",
+      "area": "第一主功",
+      "grade": "engineering_auditable",
+      "status": "production",
+      "statement": "只从valid Settlement选第一主功；先真实完成/范围/闭环/覆盖，再用书本入手顺序解决同等级路径；同向量允许co-primary。"
+    },
+    {
+      "id": "BLIND-ZF-INTENT-ALIGN-001",
+      "area": "正反局",
+      "grade": "S/A",
+      "status": "production",
+      "statement": "正反核心比较日柱做功之意与全局之意；Completion不等于正局。"
+    },
+    {
+      "id": "ZF-SOURCE-GOVERNANCE-001",
+      "area": "正反局治理",
+      "grade": "source_gold",
+      "status": "production",
+      "statement": "正式来源方向与V2独立candidate分开；有分歧显式输出，不静默覆盖也不无来源翻盘。"
+    },
+    {
+      "id": "BLIND-ZF-COMPLETION-SEPARATION-001",
+      "area": "正反局",
+      "grade": "A",
+      "status": "production",
+      "statement": "做成/未做净只描述完成度；没有反向意图证据不自动判反。"
+    },
+    {
+      "id": "STAGE-ZF-INCREMENTAL-001",
+      "area": "岁运正反",
+      "grade": "A",
+      "status": "production",
+      "statement": "原局→大运→流年→流月逐层传递；每层只消费本层新增变化，避免跨层重复计票。"
+    },
+    {
+      "id": "TIMING-IDENTITY-LAYER-001",
+      "area": "岁运身份",
+      "grade": "A/B",
+      "status": "production_gated",
+      "statement": "身份先解析且保留所属时间层；actor到位不得误报target到位，B级代表顺序不得覆盖A级身份。"
+    },
+    {
+      "id": "BLIND-GENERATION-GUEST-HOST-001",
+      "status": "production",
+      "source_grade": "A",
+      "scope": "generation_flow",
+      "summary": "生用/泄用同时记录宾主流向；流向不等于成果归属。",
+      "area": "generation_flow",
+      "grade": "A",
+      "statement": "生用/泄用同时记录宾主流向；流向不等于成果归属。"
+    },
+    {
+      "id": "BLIND-CATCHER-THIEF-EFFICIENCY-001",
+      "status": "production_qualitative",
+      "source_grade": "A",
+      "scope": "efficiency",
+      "summary": "按实际执行器与独立目标、捕神/贼神供需定性高低效率；只输出高/中/低等结构等级，不换算概率、财富分或固定百分比。",
+      "area": "efficiency",
+      "grade": "A",
+      "statement": "一捕多贼可判高利用，捕多贼少可判低利用；做功链先成立再评效率，效率低不反推为无功。"
+    },
+    {
+      "id": "BLIND-HEYONG-DAY-ENTRY-001",
+      "status": "production",
+      "source_grade": "A",
+      "scope": "he_yong",
+      "summary": "标准合用从日干、日支入手；日时主位或党势代理节点的合不得仅凭 hostWeight 泛化成主位合财/合官。",
+      "area": "he_yong",
+      "grade": "A",
+      "statement": "日干合先看意向与承载，日支合看主位合用；其它柱之合保留关系事实并由党势/复合结构消费。"
+    },
+    {
+      "id": "BLIND-TOMB-TOOL-CONSTRAINT-001",
+      "status": "production_gated",
+      "source_grade": "A",
+      "scope": "tomb_efficiency",
+      "summary": "入墓对象若同时是有效制局的执行工具，入墓优先解释为工具受限和效率损失，不独立抢成高效墓用主功。",
+      "area": "tomb_efficiency",
+      "grade": "A",
+      "statement": "先分清墓中收的是目标还是捕神/功神；工具被墓住时，应回到实际制局评效率。"
+    },
+    {
+      "id": "BLIND-UNIFIED-WEALTH-OUTPUT-001",
+      "status": "production_gated",
+      "source_grade": "A",
+      "scope": "unified_structure",
+      "summary": "财统食伤：多食伤汇向唯一财枢纽，且该财由主方承接或控制。",
+      "area": "unified_structure",
+      "grade": "A",
+      "statement": "财统食伤：多食伤汇向唯一财枢纽，且该财由主方承接或控制。"
+    },
+    {
+      "id": "BLIND-UNIFIED-OFFICIAL-WEALTH-001",
+      "status": "production_gated",
+      "source_grade": "A",
+      "scope": "unified_structure",
+      "summary": "官统财：多财汇向唯一官枢纽，且官由主方取得/控制；官化财同链去重。",
+      "area": "unified_structure",
+      "grade": "A",
+      "statement": "官统财：多财汇向唯一官枢纽，且官由主方取得/控制；官化财同链去重。"
+    },
+    {
+      "id": "BLIND-UNIFIED-WEALTH-OFFICIAL-001",
+      "status": "production_gated",
+      "source_grade": "A",
+      "scope": "unified_structure",
+      "summary": "财统官：唯一财枢纽生出多个官杀，且财由主方控制。",
+      "area": "unified_structure",
+      "grade": "A",
+      "statement": "财统官：唯一财枢纽生出多个官杀，且财由主方控制。"
+    },
+    {
+      "id": "BLIND-UNIFIED-OUTPUT-PEER-001",
+      "status": "production_gated",
+      "source_grade": "A",
+      "scope": "unified_structure",
+      "summary": "伤统劫财：多比劫汇入食伤且枢纽归主；官杀制多比劫作为独立支路。",
+      "area": "unified_structure",
+      "grade": "A",
+      "statement": "伤统劫财：多比劫汇入食伤且枢纽归主；官杀制多比劫作为独立支路。"
+    },
+    {
+      "id": "BLIND-UNIFIED-RESOURCE-OFFICIAL-001",
+      "status": "production_gated",
+      "source_grade": "A",
+      "scope": "unified_structure",
+      "summary": "印星统官：多官杀汇入唯一印星，印再真实生入日主。",
+      "area": "unified_structure",
+      "grade": "A",
+      "statement": "印星统官：多官杀汇入唯一印星，印再真实生入日主。"
+    },
+    {
+      "id": "BLIND-UNIFIED-OFFICIAL-RESOURCE-001",
+      "status": "production_gated",
+      "source_grade": "A",
+      "scope": "unified_structure",
+      "summary": "官统印：唯一官杀枢纽生出多个印，且官由主方控制。",
+      "area": "unified_structure",
+      "grade": "A",
+      "statement": "官统印：唯一官杀枢纽生出多个印，且官由主方控制。"
+    },
+    {
+      "id": "BLIND-YINYANG-ENCIRCLEMENT-B-001",
+      "status": "candidate",
+      "source_grade": "B",
+      "scope": "school_specific_encirclement",
+      "summary": "阴阳群体围制与四库核心全部机器识别，但默认不得单独驱动第一主功或重大富贵结论。",
+      "area": "school_specific_encirclement",
+      "grade": "B",
+      "statement": "阴阳群体围制与四库核心全部机器识别，但默认不得单独驱动第一主功或重大富贵结论。"
+    },
+    {
+      "id": "BLIND-COMBINE-SEMANTIC-FAMILY-001",
+      "status": "production_audit_only",
+      "source_grade": "S/A",
+      "scope": "relation_semantics",
+      "summary": "合先记录事实，再按层级/位置/对象区分合去、合伤、合留、合动、合变或六合合绊等语义。",
+      "area": "relation_semantics",
+      "grade": "S/A",
+      "statement": "合先记录事实，再按层级/位置/对象区分合去、合伤、合留、合动、合变或六合合绊等语义。"
+    },
+    {
+      "id": "BLIND-CLASH-SEMANTIC-FAMILY-001",
+      "status": "production_audit_only",
+      "source_grade": "S/A",
+      "scope": "relation_semantics",
+      "summary": "冲按远近、强弱、墓库与岁运层继续裁决冲制、冲坏、冲破、冲动、冲旺、冲开/冲去。",
+      "area": "relation_semantics",
+      "grade": "S/A",
+      "statement": "冲按远近、强弱、墓库与岁运层继续裁决冲制、冲坏、冲破、冲动、冲旺、冲开/冲去。"
+    },
+    {
+      "id": "BLIND-WOOD-LIFE-001",
+      "status": "production_audit_only",
+      "source_grade": "A",
+      "scope": "special_nature",
+      "summary": "木的死活：有根且有有效水生才升级活木；子/壬弱生等例外单列，默认不直接推健康寿命。",
+      "area": "special_nature",
+      "grade": "A",
+      "statement": "木的死活：有根且有有效水生才升级活木；子/壬弱生等例外单列，默认不直接推健康寿命。"
+    },
+    {
+      "id": "BLIND-WATER-NATURE-001",
+      "status": "production_audit_only",
+      "source_grade": "A",
+      "scope": "special_nature",
+      "summary": "子/壬按流动水弱生木，癸/亥按静水较能生木；具体组合仍按位置关系裁决。",
+      "area": "special_nature",
+      "grade": "A",
+      "statement": "子/壬按流动水弱生木，癸/亥按静水较能生木；具体组合仍按位置关系裁决。"
+    },
+    {
+      "id": "BLIND-SI-DUAL-NATURE-001",
+      "status": "production_audit_only",
+      "source_grade": "A",
+      "scope": "special_nature",
+      "summary": "巳火具有火/金双重性；木火势与金势变化时重算其性质，不永久固定。",
+      "area": "special_nature",
+      "grade": "A",
+      "statement": "巳火具有火/金双重性；木火势与金势变化时重算其性质，不永久固定。"
+    },
+    {
+      "id": "GONG-PIERCING-CANDIDATE-001",
+      "status": "candidate",
+      "source_grade": "A+B_direction",
+      "scope": "gong_candidate",
+      "summary": "核心书确认穿可做功；具体方向表来源不足时仅生成条件路径。",
+      "area": "gong_candidate",
+      "grade": "A+B_direction",
+      "statement": "核心书确认穿可做功；具体方向表来源不足时仅生成条件路径。"
+    },
+    {
+      "id": "GONG-PUNISH-CANDIDATE-001",
+      "status": "candidate",
+      "source_grade": "A",
+      "scope": "gong_candidate",
+      "summary": "丑戌、未戌刑可损坏/刑制/开库；缺位置力量和结果证据时只生成条件路径。",
+      "area": "gong_candidate",
+      "grade": "A",
+      "statement": "丑戌、未戌刑可损坏/刑制/开库；缺位置力量和结果证据时只生成条件路径。"
+    },
+    {
+      "id": "GONG-ABSOLUTE-CANDIDATE-001",
+      "status": "candidate",
+      "source_grade": "B",
+      "scope": "gong_candidate",
+      "summary": "四绝方向全部程序化为候选做功路径，未取得核心来源金标准前不得进入正式第一主功。",
+      "area": "gong_candidate",
+      "grade": "B",
+      "statement": "四绝方向全部程序化为候选做功路径，未取得核心来源金标准前不得进入正式第一主功。"
+    },
+    {
+      "id": "GONG-CLASH-TAKE-001",
+      "area": "冲取",
+      "grade": "A",
+      "status": "production_with_counter_gate",
+      "statement": "真实地支冲中，主位之体对宾位之用且没有更具体核心制局可解释时，可形成主宾冲取；日禄被官杀冲等来源反例不得倒判。"
+    },
+    {
+      "id": "GONG-CLASH-TAKE-ANTI-LU-001",
+      "area": "冲取反证",
+      "grade": "A",
+      "status": "production_counter_gate",
+      "statement": "日支为固定禄、宾位官杀在冲中正向克禄且无其它主方制化/党势闭环时，不生成日禄取杀。"
+    },
+    {
+      "id": "GONG-WEAR-CONTROL-001",
+      "area": "穿制",
+      "grade": "A",
+      "status": "production_with_context_gate",
+      "statement": "穿关系只有在上下文能唯一确定主方执行方向并形成可识别制局时，才可按路径级来源门晋级 wear_control；通用穿语义仍保持条件态。"
+    },
+    {
+      "id": "GONG-WEAR-YANGREN-WEALTH-GATE-001",
+      "area": "穿制反证",
+      "grade": "A",
+      "status": "production_counter_gate",
+      "statement": "羊刃/比劫穿财若缺少官杀约束或其它真实闭环，只保留条件候选，不解释为成功取财。"
+    }
+  ]
+}

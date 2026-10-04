@@ -1,0 +1,47 @@
+{
+  "name": "zhenyi-bazi-paipan",
+  "version": "2.5.6",
+  "private": true,
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.json",
+    "test": "node tests/regression.js && node tests/judgment-regression.js && node tests/judgment-source-benchmark.js && node tests/judgment-v24-regression.js && node tests/judgment-v25-regression.js && node tests/judgment-v252-zhengfan.js && node tests/judgment-v253-book-audit.js && node tests/judgment-v253-release-audit.js && npm run test:ui:loading",
+    "check": "npm run build && npm test",
+    "test:source": "npm run check",
+    "test:judgment": "node tests/judgment-regression.js",
+    "test:judgment:stress": "node tests/judgment-stress.js",
+    "test:judgment:source": "node tests/judgment-source-benchmark.js",
+    "test:v24": "node tests/judgment-v24-regression.js",
+    "test:v25": "node tests/judgment-v25-regression.js",
+    "test:v25:fuzz": "node tests/judgment-v25-core-fuzz.js",
+    "test:v25:product-fuzz": "node tests/judgment-v25-fuzz.js",
+    "test:v252": "node tests/judgment-v252-zhengfan.js",
+    "test:v252:fuzz": "node tests/judgment-v252-zhengfan-fuzz.js",
+    "test:v253": "node tests/judgment-v253-book-audit.js && node tests/judgment-v253-release-audit.js",
+    "test:time:7202": "node tests/time-true-solar-boundary-7202.js",
+    "test:release:fuzz": "node tests/judgment-v253-release-fuzz.js",
+    "test:v253:birth-audit": "node tests/judgment-v253-birthtime-independent-audit.js",
+    "test:v255:birth-audit": "node tests/judgment-v253-birthtime-independent-audit.js",
+    "test:v255:diff": "node tests/judgment-v255-differential-audit.js",
+    "test:ui:loading": "node tests/ui-loading-performance.js",
+    "test:ai": "node tests/ai-integration.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^5.8.3"
+  },
+  "description": "真一盲派八字排盘系统 v2.5.6 Loading Optimized：继承 2.5.5 Algorithm Correction，新增非阻塞结果渲染与排盘加载反馈。",
+  "license": "MIT",
+  "keywords": [
+    "bazi",
+    "four-pillars",
+    "chinese-astrology",
+    "true-solar-time",
+    "lunar-calendar",
+    "shensha",
+    "typescript"
+  ]
+}
