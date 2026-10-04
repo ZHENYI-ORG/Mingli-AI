@@ -45,8 +45,6 @@ The ZHENYI team tested the model and several general-purpose models on **questio
 | GPT-6 Astra | 42% |
 | DeepSeek V4.1 | 36% |
 
-> These numbers and the “blind test” description come from the ZHENYI team. The questions, model answers, grading records, possible training overlap, and comparison settings are not public, so the results cannot yet be independently checked. The exact DeepSeek V4.1 variant also remains unconfirmed.
-
 ## Model download
 
 | Artifact | Location | Purpose |
