@@ -1,8 +1,10 @@
+**语言 / Languages:** 简体中文 · [English](README.en.md) · [日本語](README.ja.md)
+
 # 真一 ZHENYI
 
 ### 全球首个 AI 算命命理大模型
 
-**基于 Qwen3.8-27B 二次训练 · 合并版 BF16 权重 · 内置程序排盘 · 标准聊天接口**
+**27B 命理模型 · 合并版 BF16 权重 · 内置程序排盘 · 标准聊天接口**
 
 ![真一模型概览](docs/assets/model-overview.png)
 
