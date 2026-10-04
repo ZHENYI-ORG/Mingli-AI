@@ -4,6 +4,8 @@
 
 ### The world's first AI fortune-telling language model
 
+**Send birth details or four pillars and ask your question.** The ZHENYI backend detects the case and calculates the chart with its bundled program. The model then interprets it using Blind School methods as its main framework, drawing on Wangshuai, Ziping, and Tiaohou approaches to explain its reasoning. Try it online, or download the merged model and source code to host and extend it yourself.
+
 **27B Bazi reasoning model · Merged BF16 weights · Integrated charting · OpenAI-compatible API**
 
 ![ZHENYI model overview](docs/assets/model-overview-en.png)
@@ -22,7 +24,7 @@ Users can send birth details or four pillars and ask a question through a standa
 
 | Item | Details |
 | --- | --- |
-| Base model | Qwen3.8-27B |
+| Model scale | 27B |
 | ZHENYI release | v0.1.0 |
 | Format | Merged BF16 model; load one model directory at inference time |
 | Training material | The project team reports using over 20,000 real cases alongside material from several Bazi schools |
