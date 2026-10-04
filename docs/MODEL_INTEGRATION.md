@@ -26,15 +26,14 @@ curl http://服务器地址:8787/v1/chat/completions \
 
 ## 部署
 
-需要 Node.js 20+、Qwen3.8-27B 原始权重、真一 LoRA 适配器，以及支持当前模型的 ms-swift 环境。底模与适配器正在上传至本仓库的 v0.1.0 Release，完成核验后公开。发布后按仓库首页的命令下载、还原并校验。模型服务需要足够的显存；低显存机器需自行配置量化或其他推理方案。
+需要 Node.js 20+、真一合并版权重，以及支持当前模型的 ms-swift 环境。模型权重正在上传至本仓库的 v0.1.0 Release，完成核验后公开。发布后按仓库首页的命令下载、还原并校验。模型服务需要足够的显存；低显存机器需自行配置量化或其他推理方案。
 
 ```bash
 npm ci
 npm run build
 npm run test:ai
 
-export BASE_MODEL_PATH="$PWD/model/base"
-export ADAPTER_PATH="$PWD/model/adapter"
+export MODEL_PATH="$PWD/model/zhenyi"
 export SWIFT_BIN=/path/to/swift
 bash scripts/start-model-service.sh
 ```
@@ -50,7 +49,7 @@ bash scripts/start-web.sh
 
 聊天客户端连接 `http://服务器地址:8787/v1`。若底层模型服务设置了密钥，在网页服务环境中另设 `ZHENYI_MODEL_API_KEY`。如需为公开聊天接口设置访问密钥，配置 `ZHENYI_PUBLIC_API_KEY`，客户端用标准 `Authorization: Bearer <密钥>` 请求。
 
-适配器目录需直接包含 `adapter_model.safetensors` 和 `adapter_config.json`。运行脚本默认使用 bf16；请按实际显存选择设备和推理配置。
+模型目录需直接包含 `config.json`、`model.safetensors.index.json` 和全部权重分片。运行脚本默认使用 bf16；请按实际显存选择设备和推理配置。
 
 ## 边界
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reassemble Qwen3.8-27B files downloaded from this repository's Release."""
+"""Reassemble merged ZHENYI model files downloaded from this repository's Release."""
 
 import hashlib
 import json
@@ -9,10 +9,10 @@ import sys
 
 def main():
     if len(sys.argv) != 3:
-        raise SystemExit("Usage: python3 scripts/reconstruct-base.py ASSET_DIR OUTPUT_DIR")
+        raise SystemExit("Usage: python3 scripts/reconstruct-model.py ASSET_DIR OUTPUT_DIR")
     assets = Path(sys.argv[1])
     output = Path(sys.argv[2])
-    manifest = json.loads((assets / "base-manifest.json").read_text(encoding="utf-8"))
+    manifest = json.loads((assets / "merged-manifest.json").read_text(encoding="utf-8"))
     output.mkdir(parents=True, exist_ok=True)
 
     for item in manifest["files"]:
