@@ -4,14 +4,7 @@
 
 ## 部署
 
-需要 Node.js 20+、Qwen3.8-27B 底模与本项目发布的 LoRA 适配器。模型文件在本仓库的 [v0.1.0 Release](https://github.com/ZHENYI-ORG/Zhenyi-AI/releases/tag/v0.1.0) 附件中发布。由于单个附件有大小限制，底模分为多个文件；下载全部附件后，使用 `scripts/reconstruct-base.py` 按 SHA-256 校验并还原。源码仓库不含模型权重。具体启动命令和 API 示例见 [部署文档](docs/MODEL_INTEGRATION.md)。
-
-```bash
-gh release download v0.1.0 --repo ZHENYI-ORG/Zhenyi-AI --dir model-assets
-python3 scripts/reconstruct-base.py model-assets model/base
-mkdir -p model/adapter
-unzip model-assets/zhenyi-qwen3.8-27b-adapter-only.zip -d model/adapter
-```
+需要 Node.js 20+、Qwen3.8-27B 底模与真一 LoRA 适配器。模型权重暂未在本仓库公开；部署者需自行准备模型文件。具体启动命令和 API 示例见 [部署文档](docs/MODEL_INTEGRATION.md)。
 
 ```bash
 npm ci
