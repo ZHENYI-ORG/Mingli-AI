@@ -4,21 +4,13 @@
 
 ### The world's first AI fortune-telling language model
 
-**Send birth details or four pillars and ask your question.** The ZHENYI backend detects the case and calculates the chart with its bundled program. The model then interprets it using Blind School methods as its main framework, drawing on Wangshuai, Ziping, and Tiaohou approaches to explain its reasoning. Try it online, or download the merged model and source code to host and extend it yourself.
+**Send birth details or four pillars to ZHENYI, then ask your question.** The backend calculates the chart with the included software. The model reads it through Blind School methods and also considers Wangshuai, Ziping, and Tiaohou approaches. You can try it online or download the weights and source code to run it yourself.
 
 **27B Bazi reasoning model · Merged BF16 weights · Integrated charting · OpenAI-compatible API**
 
 ![ZHENYI model overview](docs/assets/model-overview-en.png)
 
 [Try online](https://www.zhenyi.org) · [Model weights](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/releases/tag/v0.1.0) · [Evaluation](#evaluation) · [Quick start](#quick-start) · [API](#api-usage) · [Contribute](#why-open-source)
-
-**Prefer not to deploy? [Try ZHENYI online at www.zhenyi.org](https://www.zhenyi.org).**
-
-## About ZHENYI
-
-ZHENYI is an open-source language model project for Bazi (Four Pillars) interpretation. Blind School methods form its core. The project also draws on Wangshuai (strength and weakness), Ziping, and Tiaohou (climate adjustment) approaches. Our aim is to examine how these schools support or challenge one another when applied to the same chart, and to give interpretations with stated reasoning.
-
-Users can send birth details or four pillars and ask a question through a standard chat interface. The backend identifies the case, checks the supplied information, calls the included charting program to calculate the pillars and luck cycles, then passes the result to the model. **Software calculates the chart; the model interprets it.**
 
 ## Model overview
 
@@ -27,7 +19,7 @@ Users can send birth details or four pillars and ask a question through a standa
 | Model scale | 27B |
 | ZHENYI release | v0.1.0 |
 | Format | Merged BF16 model; load one model directory at inference time |
-| Training material | The project team reports using over 20,000 real cases alongside material from several Bazi schools |
+| Training material | The team reports using over 20,000 real cases and material from several Bazi schools |
 | Interface | OpenAI-compatible `/v1/chat/completions` and `/v1/models` |
 | Charting | The bundled program calculates pillars and luck cycles; the backend requests missing information |
 | Public artifacts | Merged weights, charting source, chat backend, web interface, and deployment scripts |
@@ -38,13 +30,13 @@ The public repository and Release do not contain the original training texts, ca
 
 ![ZHENYI inference pipeline](docs/assets/pipeline-en.png)
 
-The backend identifies cases in the conversation. If key birth information is missing, it asks the user to provide it. For complete cases, the charting program performs the calculations and the model writes the analysis. The same endpoint can also handle ordinary conversation. See the [integration guide](docs/MODEL_INTEGRATION.md) for implementation details.
+If birth information is missing, the backend asks for it. Once the details are complete, the program calculates the pillars and luck cycles and the model answers using that chart. The same endpoint also handles ordinary conversation. See the [integration guide](docs/MODEL_INTEGRATION.md) for details.
 
 ## Evaluation
 
 ![Team-reported results on historical national fortune-teller competition questions: ZHENYI 73%, Claude Opus 5.5 48%, GPT-6 Astra 42%, DeepSeek V4.1 36%](docs/assets/evaluation.png)
 
-The project team compared ZHENYI with general-purpose models on **questions from past national fortune-teller competitions** and describes this evaluation as a blind test. The team-reported accuracy figures are:
+The ZHENYI team tested the model and several general-purpose models on **questions from past national fortune-teller competitions**. The team describes the test as blind and recorded these accuracy figures.
 
 | Model | Accuracy |
 | --- | ---: |
@@ -53,7 +45,7 @@ The project team compared ZHENYI with general-purpose models on **questions from
 | GPT-6 Astra | 42% |
 | DeepSeek V4.1 | 36% |
 
-> **Evaluation status:** The scores and the “blind test” description come from the project team. Question-level prompts, model outputs, grading records, possible overlap with training data, and model settings have not been published, so these results cannot yet be independently reproduced. The exact DeepSeek V4.1 variant also remains unspecified.
+> These numbers and the “blind test” description come from the ZHENYI team. The questions, model answers, grading records, possible training overlap, and comparison settings are not public, so the results cannot yet be independently checked. The exact DeepSeek V4.1 variant also remains unconfirmed.
 
 ## Model download
 
@@ -111,11 +103,11 @@ For an OpenAI-compatible SDK, set `base_url` to `http://localhost:8787/v1` and u
 
 ## Why open source
 
-I believe Blind School, Wangshuai, Ziping, and Tiaohou each hold part of the picture. The hard part is testing their ideas on the same cases and explaining the basis for a judgment when they disagree. ZHENYI starts with Blind School methods while taking the other schools seriously.
+I believe Blind School, Wangshuai, Ziping, and Tiaohou each hold part of the truth about Bazi. Put them to work on the same case and you can see where they agree, and where their explanations conflict. Blind School sits at the center of ZHENYI, while practitioners and material from the other schools have also shaped its training.
 
-With more cases, feedback, and practitioners taking part, I hope ZHENYI will develop a coherent way of interpreting charts. Perhaps that approach will eventually go beyond what we can articulate today. That is an ambition to test, not a result we claim to have proved.
+More cases and more people pointing out wrong answers may help ZHENYI develop its own way of reading a chart. I hope it can one day reach beyond the approaches we know now. New cases will tell us how far that hope can go.
 
-We open-sourced the project so practitioners, researchers, and developers can inspect the charting program, discuss interpretations, report mistakes, and propose better evaluations. Contributions and issues are welcome.
+I opened the project because I want people to use it and challenge it. If the charting is wrong, an explanation feels forced, or a case goes badly, tell us where. Those specific corrections are how ZHENYI can improve.
 
 ## License and citation
 
@@ -136,4 +128,3 @@ We open-sourced the project so practitioners, researchers, and developers can in
 
 [![ZHENYI GitHub Star History](https://api.star-history.com/svg?repos=ZHENYI-ORG/zhenyi-mingli-ai&type=Date)](https://star-history.com/#ZHENYI-ORG/zhenyi-mingli-ai&Date)
 
-Star History generates this live chart from the repository's public GitHub stars. The project is newly open-sourced, so the curve will develop as people discover it. Click the chart for the current data.
