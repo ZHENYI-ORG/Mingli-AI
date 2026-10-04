@@ -23,7 +23,7 @@
 - [API 调用](#api-调用)
 - [为什么开源](#为什么开源)
 - [许可与引用](#许可与引用)
-- [GitHub 开发活跃度](#github-开发活跃度)
+- [Star History](#star-history)
 
 ## 项目简介
 
@@ -143,8 +143,8 @@ curl http://localhost:8787/v1/chat/completions \
 }
 ```
 
-## GitHub 开发活跃度
+## Star History
 
-![真一仓库公开提交活跃度](docs/assets/activity-heatmap.png)
+[![真一 GitHub Star 增长曲线](https://api.star-history.com/svg?repos=ZHENYI-ORG/zhenyi-mingli-ai&type=Date)](https://star-history.com/#ZHENYI-ORG/zhenyi-mingli-ai&Date)
 
-图中仅统计公开仓库提交，截取日期见图片右上角。项目刚开源，社区贡献会持续增加；查看 [GitHub 实时活动](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/activity)。
+图表由 Star History 根据真一仓库的公开 Star 数据动态生成，项目刚开源，曲线会随关注人数增长。点击图表可查看实时数据。

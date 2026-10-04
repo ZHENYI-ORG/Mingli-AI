@@ -130,8 +130,8 @@ We open-sourced the project so practitioners, researchers, and developers can in
 }
 ```
 
-## GitHub development activity
+## Star History
 
-![Public commit activity for the ZHENYI repository](docs/assets/activity-heatmap-en.png)
+[![ZHENYI GitHub Star History](https://api.star-history.com/svg?repos=ZHENYI-ORG/zhenyi-mingli-ai&type=Date)](https://star-history.com/#ZHENYI-ORG/zhenyi-mingli-ai&Date)
 
-The chart shows public repository commits only, as of the date shown in the image. The project is newly open-sourced; follow [live GitHub activity](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/activity).
+Star History generates this live chart from the repository's public GitHub stars. The project is newly open-sourced, so the curve will develop as people discover it. Click the chart for the current data.

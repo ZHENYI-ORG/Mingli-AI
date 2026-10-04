@@ -130,8 +130,8 @@ OpenAI 互換 SDK では `base_url` を `http://localhost:8787/v1`、モデル�
 }
 ```
 
-## GitHub の開発状況
+## Star History
 
-![真一リポジトリの公開コミット活動](docs/assets/activity-heatmap-en.png)
+[![真一の GitHub Star 推移](https://api.star-history.com/svg?repos=ZHENYI-ORG/zhenyi-mingli-ai&type=Date)](https://star-history.com/#ZHENYI-ORG/zhenyi-mingli-ai&Date)
 
-画像の日付時点における公開コミットのみを表示しています。プロジェクトは公開されたばかりです。[GitHub の最新アクティビティ](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/activity)もご覧ください。
+Star History がリポジトリの公開 Star データから動的に生成するグラフです。プロジェクトは公開されたばかりです。画像をクリックすると最新のデータを確認できます。
