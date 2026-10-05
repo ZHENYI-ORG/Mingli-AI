@@ -6,11 +6,11 @@
 
 We trained Blind School reasoning methods into the model, drawing on Wangshuai, Ziping, and Tiaohou as well. Send birth details and the included software calculates the chart. ZHENYI then examines the chart and fortune cycles in light of your question.
 
-The model weights, charting software, chat backend, and deployment code are open. Download the project to deploy and develop it on your own server.
+The model weights, charting software, chat backend, and deployment code are open. [Try ZHENYI online](https://www.zhenyi.org), or download the project to deploy and develop it on your own server.
 
 ![ZHENYI model overview](docs/assets/model-overview-en.png)
 
-[Model weights](https://github.com/ZHENYI-ORG/Mingli-AI/releases/tag/v0.1.0) · [Evaluation](#evaluation) · [Quick start](#quick-start) · [API](#api-usage) · [Contribute](#why-open-source)
+[Try online](https://www.zhenyi.org) · [Model weights](https://github.com/ZHENYI-ORG/Mingli-AI/releases/tag/v0.1.0) · [Evaluation](#evaluation) · [Quick start](#quick-start) · [API](#api-usage) · [Contribute](#why-open-source)
 
 ## Model overview
 
@@ -56,6 +56,8 @@ The ZHENYI team tested the model and several general-purpose models on **questio
 The Release contains **merged weights**: ZHENYI's fine-tuning has been incorporated into the base weights, so no separate LoRA adapter is needed at deployment. Allow sufficient disk space and inference hardware for a BF16 model of this size.
 
 ## Quick start
+
+If you only want to explore the model, use the [online experience](https://www.zhenyi.org) without deploying it.
 
 Self-hosting requires Node.js 20+, Python 3, and a compatible [ms-swift](https://github.com/modelscope/ms-swift) inference environment. Download all Release assets, reconstruct the model, and build the backend:
 
