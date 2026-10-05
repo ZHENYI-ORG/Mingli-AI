@@ -4,9 +4,9 @@
 
 ### ZHENYI: the world's first open-source AI fortune-telling language model
 
-**Send birth details or four pillars to ZHENYI, then ask your question.** The backend calculates the chart with the included software. The model reads it through Blind School methods and also considers Wangshuai, Ziping, and Tiaohou approaches. You can try it online or download the weights and source code to run it yourself.
+We trained Blind School reasoning methods into the model, drawing on Wangshuai, Ziping, and Tiaohou as well. Send birth details and the included software calculates the chart. ZHENYI then examines the chart and fortune cycles in light of your question.
 
-**27B Bazi reasoning model · Merged BF16 weights · Integrated charting · OpenAI-compatible API**
+The model weights, charting software, chat backend, and deployment code are open. [Try ZHENYI online](https://www.zhenyi.org), or download the project to deploy and develop it on your own server.
 
 ![ZHENYI model overview](docs/assets/model-overview-en.png)
 
