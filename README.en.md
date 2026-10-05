@@ -1,8 +1,8 @@
 **Languages:** [简体中文](README.md) · English · [日本語](README.ja.md)
 
-# ZHENYI 真一
+# Mingli AI
 
-### The world's first AI fortune-telling language model
+### ZHENYI: the world's first open-source AI fortune-telling language model
 
 **Send birth details or four pillars to ZHENYI, then ask your question.** The backend calculates the chart with the included software. The model reads it through Blind School methods and also considers Wangshuai, Ziping, and Tiaohou approaches. You can try it online or download the weights and source code to run it yourself.
 
@@ -10,7 +10,7 @@
 
 ![ZHENYI model overview](docs/assets/model-overview-en.png)
 
-[Try online](https://www.zhenyi.org) · [Model weights](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/releases/tag/v0.1.0) · [Evaluation](#evaluation) · [Quick start](#quick-start) · [API](#api-usage) · [Contribute](#why-open-source)
+[Try online](https://www.zhenyi.org) · [Model weights](https://github.com/ZHENYI-ORG/Mingli-AI/releases/tag/v0.1.0) · [Evaluation](#evaluation) · [Quick start](#quick-start) · [API](#api-usage) · [Contribute](#why-open-source)
 
 ## Model overview
 
@@ -49,7 +49,7 @@ The ZHENYI team tested the model and several general-purpose models on **questio
 
 | Artifact | Location | Purpose |
 | --- | --- | --- |
-| Merged model weights | [v0.1.0 Release](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/releases/tag/v0.1.0) | Download every split asset and reconstruct the model directory |
+| Merged model weights | [v0.1.0 Release](https://github.com/ZHENYI-ORG/Mingli-AI/releases/tag/v0.1.0) | Download every split asset and reconstruct the model directory |
 | Reconstruction script | [scripts/reconstruct-model.py](scripts/reconstruct-model.py) | Verify SHA-256 checksums and rebuild the files |
 | Source and deployment configuration | This repository | Backend, charting program, web app, and launch scripts |
 
@@ -62,7 +62,7 @@ If you only want to explore the model, use the [online experience](https://www.z
 Self-hosting requires Node.js 20+, Python 3, and a compatible [ms-swift](https://github.com/modelscope/ms-swift) inference environment. Download all Release assets, reconstruct the model, and build the backend:
 
 ```bash
-gh release download v0.1.0 --repo ZHENYI-ORG/zhenyi-mingli-ai --dir model-assets
+gh release download v0.1.0 --repo ZHENYI-ORG/Mingli-AI --dir model-assets
 python3 scripts/reconstruct-model.py model-assets model/zhenyi
 npm ci
 npm run build
@@ -114,15 +114,15 @@ I opened the project because I want people to use it and challenge it. If the ch
 - To cite the project:
 
 ```bibtex
-@misc{zhenyi2026,
-  title        = {ZHENYI: An Open-Source Bazi Astrology Language Model},
+@misc{mingliai2026,
+  title        = {Mingli AI: The ZHENYI Open-Source Bazi Astrology Language Model},
   author       = {{ZHENYI-ORG}},
   year         = {2026},
-  howpublished = {\url{https://github.com/ZHENYI-ORG/zhenyi-mingli-ai}}
+  howpublished = {\url{https://github.com/ZHENYI-ORG/Mingli-AI}}
 }
 ```
 
 ## Star History
 
-[![ZHENYI GitHub Star History](https://api.star-history.com/svg?repos=ZHENYI-ORG/zhenyi-mingli-ai&type=Date)](https://star-history.com/#ZHENYI-ORG/zhenyi-mingli-ai&Date)
+[![ZHENYI GitHub Star History](https://api.star-history.com/svg?repos=ZHENYI-ORG/Mingli-AI&type=Date)](https://star-history.com/#ZHENYI-ORG/Mingli-AI&Date)
 

@@ -1,16 +1,16 @@
 **语言 / Languages:** 简体中文 · [English](README.en.md) · [日本語](README.ja.md)
 
-# 真一 ZHENYI
+# Mingli AI
 
-### 全球首个 AI 算命命理大模型
+**真一 ZHENYI 大模型｜全球首个开源AI 算命命理大模型；程序负责排盘，模型以盲派技法为核心，融合旺衰、子平、调候作为参考。可在线体验，模型权重和源码已开源。**
 
-**把出生资料或四柱发给真一，就能直接问。** 后端先用程序排盘，模型再按盲派理法分析，也会参考旺衰、子平、调候等流派的判断。你可以在线使用，也可以下载模型权重和源码自己部署。
+把出生资料或四柱发给真一，就能直接提问。信息不全时，后端会先请用户补充；资料齐全后自动排盘，再把结果交给模型分析。
 
 **27B 命理模型 · 合并版 BF16 权重 · 内置程序排盘 · 标准聊天接口**
 
 ![真一模型概览](docs/assets/model-overview.png)
 
-[在线体验](https://www.zhenyi.org) · [模型权重](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/releases/tag/v0.1.0) · [评测结果](#评测结果) · [快速部署](#快速部署) · [API 调用](#api-调用) · [参与项目](#为什么开源)
+[在线体验](https://www.zhenyi.org) · [模型权重](https://github.com/ZHENYI-ORG/Mingli-AI/releases/tag/v0.1.0) · [评测结果](#评测结果) · [快速部署](#快速部署) · [API 调用](#api-调用) · [参与项目](#为什么开源)
 
 ## 目录
 
@@ -61,7 +61,7 @@
 
 | 文件 | 位置 | 用途 |
 | --- | --- | --- |
-| 合并版模型权重 | [v0.1.0 Release](https://github.com/ZHENYI-ORG/zhenyi-mingli-ai/releases/tag/v0.1.0) | 下载全部分卷附件后还原完整模型目录 |
+| 合并版模型权重 | [v0.1.0 Release](https://github.com/ZHENYI-ORG/Mingli-AI/releases/tag/v0.1.0) | 下载全部分卷附件后还原完整模型目录 |
 | 还原脚本 | [scripts/reconstruct-model.py](scripts/reconstruct-model.py) | 校验 SHA-256 并重建模型文件 |
 | 源码与部署配置 | 本仓库 | 后端、排盘程序、网页和启动脚本 |
 
@@ -74,7 +74,7 @@ Release 提供的是**合并版权重**。真一的微调结果已经写入模�
 需要 Node.js 20+、Python 3，以及支持该模型的 [ms-swift](https://github.com/modelscope/ms-swift) 推理环境。先下载全部 Release 附件，按校验值还原模型，再构建后端：
 
 ```bash
-gh release download v0.1.0 --repo ZHENYI-ORG/zhenyi-mingli-ai --dir model-assets
+gh release download v0.1.0 --repo ZHENYI-ORG/Mingli-AI --dir model-assets
 python3 scripts/reconstruct-model.py model-assets model/zhenyi
 npm ci
 npm run build
@@ -126,15 +126,15 @@ curl http://localhost:8787/v1/chat/completions \
 - 如在研究或项目中使用真一，可引用本仓库：
 
 ```bibtex
-@misc{zhenyi2026,
-  title        = {ZHENYI: An Open-Source Bazi Astrology Language Model},
+@misc{mingliai2026,
+  title        = {Mingli AI: The ZHENYI Open-Source Bazi Astrology Language Model},
   author       = {{ZHENYI-ORG}},
   year         = {2026},
-  howpublished = {\url{https://github.com/ZHENYI-ORG/zhenyi-mingli-ai}}
+  howpublished = {\url{https://github.com/ZHENYI-ORG/Mingli-AI}}
 }
 ```
 
 ## Star History
 
-[![真一 GitHub Star 增长曲线](https://api.star-history.com/svg?repos=ZHENYI-ORG/zhenyi-mingli-ai&type=Date)](https://star-history.com/#ZHENYI-ORG/zhenyi-mingli-ai&Date)
+[![真一 GitHub Star 增长曲线](https://api.star-history.com/svg?repos=ZHENYI-ORG/Mingli-AI&type=Date)](https://star-history.com/#ZHENYI-ORG/Mingli-AI&Date)
 
