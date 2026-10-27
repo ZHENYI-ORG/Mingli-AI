@@ -36,7 +36,7 @@ If birth information is missing, the backend asks for it. Once the details are c
 
 ![Team-reported results on historical national fortune-teller competition questions: ZHENYI 73%, Claude Opus 5.5 48%, GPT-6 Astra 42%, DeepSeek V4.1 36%](docs/assets/evaluation.png)
 
-The ZHENYI team tested the model and several general-purpose models on **questions from past national fortune-teller competitions**. The team describes the test as blind and recorded these accuracy figures.
+The ZHENYI team tested the model and several general-purpose models using **past fortune-teller competition questions** published by the open-source [BaziQA project](https://github.com/ChenJiangxi/BaziQA). The team describes this as a blind test. We thank BaziQA for making the questions and answers available. The figures below are the ZHENYI team's test results.
 
 | Model | Accuracy |
 | --- | ---: |
